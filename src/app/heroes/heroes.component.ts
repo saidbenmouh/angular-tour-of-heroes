@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Hero } from '../entities/Hero';
 import { HeroService } from '../hero.service';
 
-
-
 @Component({
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
@@ -22,9 +20,4 @@ export class HeroesComponent implements OnInit {
     this.heroService.getHeroes()
     .subscribe(heroes => this.heroes = heroes);
   }
-
-
-
-
-
 }
